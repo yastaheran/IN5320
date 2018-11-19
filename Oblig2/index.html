@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Oblig 2 - Quiz Night Saver</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link href='http://fonts.googleapis.com/css?family=Kalam|Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <h1 id="nameOfApp"><a href="./index.html">The Quiz Night Saver</a></h1>
+  </header>
+  <div id="container">
+    <section id="start">
+        <p class="info">  Quiz creater for quiz nights <br>
+             All you need to do is select category, difficulty, and number of questions. <br>
+             The quiz questions and answers will then be added to your slack channel.
+        </p>
+        <p id="joke" class="joke"></p>
+        <button id="startBtn" onclick="selection()">Start</button> <br><br>
+        <picture>
+          <source srcset="http://placekitten.com/g/600/300" media="(max-width: 780px)">
+          <source srcset="http://placekitten.com/g/500/300" media="(max-width: 600px)">
+          <source srcset="http://placekitten.com/g/365/120" media="(max-width: 400px)">
+          <source srcset="http://placekitten.com/g/989/400">
+          <img src="http://placekitten.com/g/989/400" alt="Kitten">
+        </picture>
+    </section>
+
+    <!-- List of quiz categories -->
+    <section id="selectionArea" class="textCenter">
+      <h1>Select a quiz category</h1>
+      <p id="joke2" class="joke"></p>
+      <ul id="quizList"></ul>
+    </section>
+
+    <!-- Specification Area - appears when user selects a quiz-->
+    <section id="specificationArea">
+      <h2>Specify difficulty and number of questions for the quiz</h2>
+      <p id="joke3" class="joke"></p>
+      <form id="specification">
+        Difficulty: <select id="level" placeholder="select difficulty">
+                      <option value="easy">easy</option>
+                      <option value="medium">medium</option>
+                      <option value="hard">hard</option>
+                    </select> <br>
+        Number of questions: <input type="text" id="num" placeholder="max 50"> <br>
+      </form>
+      <button id="generateQBtn">Generate Quiz</button> <br><br>
+      <picture>
+        <source srcset="http://placekitten.com/g/650/300" media="(max-width: 780px)">
+        <source srcset="http://placekitten.com/g/500/400" media="(max-width: 600px)">
+        <source srcset="https://placekitten.com/g/359/120" media="(max-width: 400px)">
+        <source srcset="https://placekitten.com/g/989/340">
+        <img src="https://placekitten.com/g/989/340" alt="Kitten">
+      </picture>
+    </section>
+
+    <!-- List of questions and answers -->
+    <section id="resultArea" class="res">
+      <h2>Your Quiz<h2>
+      <section id="quizArea">
+      </section>
+      <button id="slackBtn" onclick="composeSlack('#quizArea')">Edit & Send</button>
+    </section>
+
+    <!-- Compose slack message -->
+    <section id="emailArea">
+      <h2>Compose your slack message<h2>
+      <form id="slackform" onsubmit="return sendSlack()">
+        <textarea id="message" placeholder="CTRL + V to paste your quiz here" rows="10" required></textarea>  <br>
+        <button type="submit" id="sendBtn">Send</button>
+      </form>
+    </section>
+
+    <!-- When bad shit happens -->
+    <section id="alertArea" class="alert" role="alert">
+    </section>
+  </div>
+</body>
+
+<!-- the scripts -->
+<noscript> You need to enable JavaScript to run this app. </noscript>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
