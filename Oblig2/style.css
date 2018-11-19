@@ -1,0 +1,175 @@
+body {
+  overflow: auto;
+  font-family: 'open sans';
+  font-weight: 300;
+  animation-name: loader;
+  animation-duration: 0s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  overflow: scroll;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #c4e7ed;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 15vw;
+  margin: 0;
+  padding: 10px 5px;
+  color: #8b8989;
+  background-color: #d2f9f0;
+  overflow: hidden;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+#nameOfApp {
+  font-size: 5vw;
+}
+
+#nameOfApp a {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Start */
+.info {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+}
+
+.joke {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#startBtn {
+  color: #8b8989;
+  background-color: #d2f9f0;
+}
+
+/* Selection */
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+#quizList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quiz {
+  width: 20vw;
+  list-style: none;
+  font-size: 20px;
+  padding: 15px;
+  margin: 5px;
+  transition: 1s;
+  background-color: #d8eff3;
+  border-radius: 8px;
+}
+
+li:hover {
+  background-color: #80ced6;
+  color: darkgrey;
+}
+
+/* Specification */
+#generateQBtn {
+  color: #8b8989;
+  background-color: #ffe8e6;
+}
+
+select {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#num {
+  width: 20%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Result */
+.trivia {
+  font-size: 16px;
+  text-align: left;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.res {
+  text-align: center;
+}
+
+#slackBtn {
+  color: #8b8989;
+  background-color: #eaeafb;
+}
+
+#quizArea {
+  display: grid;
+}
+
+/* Slack */
+#sendBtn {
+  color: #8b8989;
+  background-color: #f0ffff;
+}
+
+textarea {
+  width: 90vw;
+  height: 100vh;
+  height: auto;
+  font-family: Courier, monospace;
+  font-weight: 300;
+  font-size: 14px;
+  resize: none;
+  outline-color: #ccffe6;
+  border: 5px solid #e6fff3;
+}
+
+/* Alert */
+.alert {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Animation */
+@keyframes loader {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* When the screen too small */
+@media only screen and (max-width: 400px) {
+  img {
+    display: none;
+  }
+}
