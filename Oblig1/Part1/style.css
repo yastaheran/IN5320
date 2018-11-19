@@ -1,0 +1,149 @@
+body {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+
+/*header*/
+.person_title {
+	font-size: 25px;
+	margin-bottom: 2px;
+	font-weight: 500;
+}
+
+.person_info {
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 2px;
+	font-weight: 500;
+
+}
+#profile_header {
+	width: 100vw;
+	background-color: #ffe6e6;
+	margin: 0;
+}
+
+#profile_pic {
+	float: left;
+	position: relative;
+	height: 195px;
+	width: 42;
+	margin-right: 30 px;
+	margin-top: 5xp;
+	
+}
+
+#contact_info {
+	background-color: #ffe6e6;
+	height: 100px;
+	margin-bottom: 10px;
+	height: auto;
+	padding: 20px;
+}
+
+/*texts*/
+h1 {
+	font-size: 40px;
+	margin-bottom: 2px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 2px;
+	font-weight: 500;
+	text-align: justify;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.element_year {
+	font-size: 10px;
+	margin-bottom: 5px;
+	margin-top 0;
+	font-weight: 600;
+}
+
+.element_title {
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #000066;
+}
+
+.description {
+	font-size: 14px;
+	color: #666699;
+}
+
+/*Sections*/
+.content_frame {
+	width: 100vw;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.course {
+	height: 50%;
+	width: 100%;
+	background-color: white;
+	margin: 0;
+	padding-top: 10px;
+	overflow: auto;
+	position: left;
+}
+
+.projects {
+	height: 50%;
+	width: 100%;
+	background-color: white;
+	margin: 0;
+	padding-top: 10px;
+	overflow: auto;
+	position: left;
+}
+
+/*List elements*/
+.course_lst {
+	column-width: auto;
+	column-count: 2;
+}
+
+.lst_element {
+	float: left;
+	width: 70%;
+	height: auto;
+	background-color: white;
+	padding: 1px 1px 1px 3px;
+	font-family; sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+
+.lst_element:link {
+	text-decoration: none;
+	color: black;
+}
+
+.lst_element:hover {
+	background-color: #ffe6e6;
+}
+
+.lst_element:visited {
+	text-decoration: none;
+	color: black;
+}
