@@ -1,0 +1,3 @@
+In this final individual assignment, you’ll innovate, design and program your own application that utilizes one or 
+more existing resources through their API to form a novel and (more or less) useful solution. You are free to create 
+whatever you want, as long as it fulfills the requirements listed below.
